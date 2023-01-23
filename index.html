@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!--Tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/9a1677510c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="font-sans">
+    <header class="">
+
+        <!--Navbar section-->
+        <div
+            class="container mx-auto  md:fixed bg-slate-50 -top-2  px-6 py-4 md:flex justify-between md:px-32   border-b-2">
+            <a href="#" class="logo  w-16"><img src="images/icon/logo.png" alt=""></a>
+
+
+
+            <ul class="grid grid-cols-3 mt-4 text-center md:mt-0 md:flex md:gap-8 font-semibold ">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#photo">Photo Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <div class="bx bx-moon" id="darkmode"></div>
+            </ul>
+
+        </div>
+
+    </header>
+
+    <main class="container mx-auto px-6 md:w-5/6">
+
+        <!--Home section-->
+        <section class="home md:flex flex-row-reverse justify-between justify-center items-center mt-12 md:mt-48"
+            id="home">
+
+            <div class="home-img lg:w-[50%] ">
+                <img src="images/shuvo1.png" alt="">
+            </div>
+            <div class="home-text mx-auto space-y-5  ">
+                <span class="text-3xl font-medium">Hello, I'm</span>
+                <h1 class="text-5xl font-bold">Ashikur Rahman</h1>
+                <h2 class="text-xl font-medium">Frontend Developer</h2>
+                <p class="text-[#8f8686]">Lorem ipsum dolor sit amet cons <br> adipisicing elit. Minima, consectetur
+                    <br>
+                    ullam?</p>
+                <button class="bg-blue-800 hover:bg-blue-500  text-white text-lg font-medium px-5 py-2 rounded-md">
+                    <a href="#contact">Contact Me</a>
+                </button>
+            </div>
+
+        </section>
+
+        <!--About Section-->
+
+        <section class=" mt-12 md:mt-32" id="about">
+            <div class="text-center">
+                <h2 class="text-3xl font-semibold">About Me</h2>
+                <span class="text-lg text-blue-900">Introduction</span>
+            </div>
+            <!-- About Content -->
+            <div class="md:grid grid-cols-2 gap-14 mt-12">
+                <div class="about-img mb-8">
+                    <img class="md:w- rounded-lg" src="images/slide2.jpeg" alt="">
+                </div>
+                <div class="about-text space-y-5">
+                    <p class="text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis beatae eius quae
+                        ab consequatur
+                        est perferendis dicta. Ad repellendus perferendis minus sunt error eos dicta enim accusantium
+                        ipsum veniam debitis quasi sint cum fugiat porro quam, blanditiis a ratione quod!</p>
+                    <div class="information space-y-5">
+                        <!-- Box 1 -->
+                        <div class="info-box">
+                            <i class="fa-solid fa-user"></i>
+                            <span class="text-xl font-medium pl-4">Md.Ashikur Rahman</span>
+                        </div>
+                        <!-- Box 2 -->
+                        <div class="info-box">
+                            <i class="fa-solid fa-phone"></i>
+                            <span class="text-xl font-medium pl-4">+88 01644976404</span>
+                        </div>
+                        <!-- Box 3 -->
+                        <div class="info-box">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span class="text-xl font-medium pl-4">ashikur.rahman3912@gmail.com</span>
+                        </div>
+                    </div>
+                    <div>
+
+                        <button
+                            class="bg-blue-800 hover:bg-blue-500 mt-4 text-white text-lg font-medium px-5 py-2 rounded-md">
+                            <a href=" ">Download CV</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Skill Section-->
+        <section class="skills  mt-12 md:mt-32" id="skills">
+            <div class="heading text-center">
+                <h2 class="text-3xl font-semibold">Skills</h2>
+                <span class="text-lg text-blue-900">My Skills</span>
+            </div>
+            <!-- Skills Content -->
+            <div class="skills-container md:grid grid-cols-2 gap-16 mt-12 ">
+                <div class="bars space-y-5">
+
+                    <div class="bars-box">
+                        <div class="flex justify-between">
+
+                            <h3 class="text-xl font-medium py-2">HTML</h3>
+                            <p class="text-xl font-medium py-2">80%</p>
+                        </div>
+                        <div class="w-full bg-slate-300 rounded-full">
+                            <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                                style="width: 80%"> 80%</div>
+                        </div>
+                    </div>
+                    <div class="bars-box">
+                        <div class="flex justify-between">
+
+                            <h3 class="text-xl font-medium py-2">CSS</h3>
+                            <p class="text-xl font-medium py-2">75%</p>
+                        </div>
+                        <div class="w-full bg-slate-300 rounded-full">
+                            <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                                style="width: 75%"> 75%</div>
+                        </div>
+                    </div>
+                    <div class="bars-box">
+                        <div class="flex justify-between">
+
+                            <h3 class="text-xl font-medium py-2">JavaScript</h3>
+                            <p class="text-xl font-medium py-2">0.1%</p>
+                        </div>
+                        <div class="w-full bg-slate-300 rounded-full">
+                            <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                                style="width: 0.1%"> 0.1%</div>
+                        </div>
+                    </div>
+                    <div class="bars-box">
+                        <div class="flex justify-between">
+
+                            <h3 class="text-xl font-medium py-2">React</h3>
+                            <p class="text-xl font-medium py-2">0%</p>
+                        </div>
+                        <div class="w-full bg-slate-300 rounded-full">
+                            <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                                style="width: 0%"> 0%</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="skills-img mt-12 md:mt-0">
+                    <img src="images/123.png" alt="">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Service Sectio-->
+
+        <section class="services mt-12 lg:mt-32" id="services">
+            <div class="heading text-center">
+                <h2 class="text-3xl font-semibold">Services</h2>
+                <span class="text-lg text-blue-900">Our Services</span>
+            </div>
+            <div class="services-content grid grid-cols-1 lg:grid-cols-4 justify-center items-center gap-6 p-6  mt-12 ">
+
+                <!-- Box 1 -->
+                <div
+                    class="services-box text-center  space-y-6 py-8  rounded-xl hover:bg-[#02225a] hover:text-white shadow-2xl">
+                    <div class=" text-3xl font-bold ">
+                        <i class="fa-solid fa-code"> </i>
+                    </div>
+                    <h3 class=" text-xl font-medium ">Web Development</h3>
+                    <div>
+                        <a href=" #">Learn More</a>
+
+                    </div>
+                </div>
+                <!-- Box 2 -->
+                <div
+                    class="services-box text-center space-y-6  py-8  rounded-xl hover:bg-[#02225a] hover:text-white shadow-2xl">
+                    <div class="text-3xl font-bold ">
+
+                        <i class="fa-solid fa-server"></i>
+
+                    </div>
+                    <h3 class="text-xl font-medium ">Backend Development</h3>
+                    <div>
+
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <!-- Box 3 -->
+                <div
+                    class="services-box text-center space-y-6  py-8  rounded-xl hover:bg-[#02225a] hover:text-white shadow-2xl">
+                    <div class="text-3xl font-bold ">
+
+                        <i class="fa-solid fa-brush"></i>
+                    </div>
+                    <h3 class="text-xl font-medium ">UI/UX Design</h3>
+                    <div>
+
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+
+                <div
+                    class="services-box text-center space-y-6  py-8  rounded-xl hover:bg-[#02225a] hover:text-white shadow-2xl">
+                    <div class="text-3xl font-bold ">
+                        <i class="fa-brands fa-wordpress"></i>
+
+                    </div>
+                    <h3 class="text-xl font-medium ">Wordpress Developer</h3>
+                    <div>
+
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Photo Gallery-->
+        <section class="services mt-12 lg:my-32 mb-12 lg:mb-48" id="photo">
+            <div class="heading text-center">
+                <h2 class="text-3xl font-semibold">Photo Gallery</h2>
+                <span class="text-lg text-blue-900">Photos</span>
+            </div>
+
+            <div
+                class="md:hover:absolute grid grid-cols-3 md:left-96 grid-rows-4 md:gap-4 gap-2 mt-9 md:w-1/2 bg-gradient-to-b from-indigo-300 via-pink-300 to-indigo-300   mx-auto shadow-2xl">
+                <div class=" row-span-2">
+                    <img class="" src="images/341.jpg" alt="">
+                </div>
+                <div>
+
+                </div>
+                <div class=" row-span-2 ">
+                    <img src="images/343.jpg" alt="">
+                </div>
+                <div class="  row-span-2 ">
+                    <img src="images/341.jpg" alt="">
+                </div>
+                <div class=" row-span-2  ">
+                    <img src="images/343.jpg" alt="">
+
+                </div>
+
+                <div class="  row-span-2 ">
+                    <img src="images/341.jpg" alt="">
+                </div>
+                <div class="   ">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--Contact Section-->
+        <section class="contact services mt-12 lg:my-32 mb-12 " id="contact">
+            <div class="heading heading text-center">
+                <h2 class="text-3xl font-semibold">Contact</h2>
+                <span class="text-lg text-blue-900">Connect With Us</span>
+            </div>
+            <div class="contact-form w-1/2 flex justify-center mt-12 mx-auto">
+                <form class=" flex flex-col space-y-4 " action="">
+                    <div class="">
+
+                        <input class="bg-slate-100 rounded-xl w-[350px] md:w-[500px] py-3 px-4" type="text"
+                            placeholder="Your Name">
+                    </div>
+                    <div class="">
+
+                        <input class="bg-slate-100 rounded-xl w-[350px] md:w-[500px] py-3 px-4" type="email" name=""
+                            id="" placeholder="Your Email">
+                    </div>
+                    <div class="w-full mx-auto">
+
+                        <textarea class="bg-slate-100 rounded-xl w-[350px] md:w-[500px] py-3 px-4" name="" id=""
+                            rows="10" placeholder="Write Message Here..."></textarea>
+                    </div>
+                    <div class="text-center">
+
+                        <button
+                            class="bg-blue-800 hover:bg-blue-500  text-white text-lg font-medium px-5 py-2 rounded-md">
+                            <a href=" #contact">Send
+                            </a>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer Section-->
+
+    <footer class="footer mt-12 lg:mt-32 bg-slate-100 pt-8">
+        <div class="footer text-center ">
+            <h2 class="text-3xl font-semibold">Ashikur Rahman</h2>
+            <div class="footer-social mt-8 mb-3 lg:mt-14 lg:mb-5 flex justify-center gap-6 text-indigo-800 text-xl">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+        </div>
+        <!-- Copyright -->
+        <div class="copyright text-center py-10">
+            <p>Create By <a href="">Md.Ashikur Rahman</a> | All Right Reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
