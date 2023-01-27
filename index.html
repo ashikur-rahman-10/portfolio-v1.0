@@ -8,6 +8,11 @@
     <title>Portfolio</title>
     <!--Tailwind-->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--DaisyUI CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.47.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/9a1677510c.js" crossorigin="anonymous"></script>
 
@@ -17,30 +22,73 @@
     <header class="">
 
         <!--Navbar section-->
-        <div
-            class="container mx-auto  md:fixed bg-slate-50 -top-2  px-6 py-4 md:flex justify-between md:px-32   border-b-2">
-            <a href="#" class="logo  w-16"><img src="images/icon/logo.png" alt=""></a>
+
+        <section class=" container mx-auto  lg:px-28">
+            <div class="navbar bg-white fixed top-0 ">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white rounded-box w-52">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#photo">Photo Gallery</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost normal-case lg:w-40 w-32" href="#home"><img src="images/icon/logo.png"
+                            alt=""></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#photo">Photo Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="navbar-end">
+
+                    Modal
+
+                    <a href="#my-modal-2"
+                        class="text-white bg-[#B68C5A] hover:bg-orange-300 border-none font-semibold rounded-lg lg:text-lg lg:px-5 lg:py-2.5 px-2 py-2 text-sm text-center  md:mr-0">Free
+                        Consultation</a>
+
+                    <div class="modal" id="my-modal-2">
+                        <div class="modal-box">
+                            <h3 class="font-bold text-lg">A free consultation is a one-on-one interaction, conversation,
+                                meeting, or interview given freely to share one's thoughts and discuss possible
+                                opportunities of working together. Despite their obvious appeal, successfully marketing
+                                a
+                                free consultation isn't as easy as it sounds.</p>
+                                <div class="modal-action">
+                                    <a href="#" class="btn">Visit</a>
+                                </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+        </section>
 
 
-
-            <ul class="grid grid-cols-3 mt-4 text-center md:mt-0 md:flex md:gap-8 font-semibold ">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#photo">Photo Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <div class="bx bx-moon" id="darkmode"></div>
-            </ul>
-
-        </div>
 
     </header>
 
     <main class="container mx-auto px-6 md:w-5/6">
 
         <!--Home section-->
-        <section class="home md:flex flex-row-reverse justify-between justify-center items-center mt-12 md:mt-48"
+        <section class="home md:flex flex-row-reverse justify-between justify-center items-center mt-[70px] lg:mt-32"
             id="home">
 
             <div class="home-img lg:w-[50%] ">
@@ -307,19 +355,19 @@
 
     <!--Footer Section-->
 
-    <footer class="footer mt-12 lg:mt-32 bg-slate-100 pt-8">
-        <div class="footer text-center ">
+    <footer class="mt-12 lg:mt-32 bg-slate-50 pt-8 px-6 flex flex-col justify-center items-center">
+        <div class=" text-center ">
             <h2 class="text-3xl font-semibold">Ashikur Rahman</h2>
-            <div class="footer-social mt-8 mb-3 lg:mt-14 lg:mb-5 flex justify-center gap-6 text-indigo-800 text-xl">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <div class=" mt-8 mb-3 lg:mt-14 lg:mb-5 flex justify-center gap-6 text-indigo-800 text-xl">
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
             </div>
 
         </div>
         <!-- Copyright -->
-        <div class="copyright text-center py-10">
+        <div class=" text-center py-10">
             <p>Create By <a href="">Md.Ashikur Rahman</a> | All Right Reserved.</p>
         </div>
     </footer>
